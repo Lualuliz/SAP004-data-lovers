@@ -13,22 +13,28 @@
       <div class="link"><a href="champions.html">Champions</a></div>
     </nav>
     <section class="nav-form">
-      <form method="post">
-        <p>Odernar por:</p>
-        <select class="order" name="Ordenar por:" id="sort" id="ordenar" >
-          <option class="order" value="a-z">A-Z</option>
-          <option class="order" value="z-a">Z-A</option>
-        </select>
-      </form>
+     
 
 
       <form method="post">
-        <p>Filtrar por:</p>
-        <select class="order" name="Ordenar por:" id="filtro">
-          <option value="HP">Maior HP</option>
-          <option value="MP">Maior MP</option>
-          <option value="ARMOR">Maior Armor</option>
+       <fieldset style="border: none;">
+        <input type="text" placeholder="filtrat por nome" id="filter-by-name" class="order filtro-nome">
+      </fieldset>
+
+      <fieldset>
+        <select class="order" name="Ordenar por:" id="sort">
+          <option disabled selected value=""> ordenar por:</option>
+          <option class="order" value="descending-name">A-Z</option>
+          <option class="order" value="ascending-name">A-Z</option>
+          <option class="order" value="ascending-hp">Maior HP</option>
+          <option class="order" value="descending-hp">Menor HP</option>
+          <option class="order" value="ascending-mp">Maior MP</option>
+          <option class="order" value="descending-mp">Menor MP</option>
+          <option class="order" value="ascending-armor">Maior Armor</option>
+          <option class="order" value="descending-armor">Menor Armor</option>
+
         </select>
+      </fieldset>
       </form>
 
 

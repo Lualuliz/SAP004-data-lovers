@@ -1,45 +1,54 @@
 import data from './data/lol/lol.js';
 const lol = data.data;
-export const orderByza = () => {
+
+export const filterBy = (lolObject,searchdTerm) =>{
+  const lolArray = Object.values (lolObject)
+  return lolArray.filter((champion) => {
+    return champion.name.toUpperCase().indexOf(searchdTerm.toUpperCase()) === 0
+  })
+};
+
+export const orderBy = (lolObject,param,ascending) =>{
+
+  const lolArray = Object.values (lolObject)
+  return lolArray.sort((championA,championB) =>{
+    let a = ""
+    let b = ""
+    if (param === "armor"){
+
+      a = championA.stats.armor
+      b = championB.stats.armor
+    } else if (param === "hp"){
+
+      a = championA.stats.hp
+      b = championB.stats.hp
+
+    }else if (param === "mp"){
+
+    a = championA.stats.mp
+    b = championB.stats.mp
+ }
+
+ const ascendingOrder = a < b ? 1 : b < a ? -1 : 0
+ const descendingOrder = ascendingOrder * -1
+
+ return ascending ? ascendingOrder : descendingOrder
+  
+  
+   })
+  };
+
+
+
+
+/*
+export const filterData = () => {
   let lolkeys = Object.keys(lol);
   lolkeys = lolkeys.reverse();
   return lolkeys;
 };
 
-export const orderByaz = () => {
-  let lolkeys = Object.keys(lol);
-  return lolkeys;
-};
-export const orderByhp = () => {
-  let valuesChamp = Object.values(lol);
-  console.log(valuesChamp);
-  let champions = valuesChamp.sort(numberCompareHp);
-  let keys = [];
-  champions.forEach(element => { keys.push(element.id)});
-  console.log(keys);
-  console.log (champions);
-  return keys.reverse();
-}
-export const orderBymp = () => {
-  let valuesChamp = Object.values(lol);
-  console.log(valuesChamp);
-  let champions = valuesChamp.sort(numberCompareMp);
-  let keys = [];
-  champions.forEach(element => { keys.push(element.id)});
-  console.log(keys);
-  console.log (champions);
-  return keys.reverse();
-}
-export const orderByarmor = () => {
-  let valuesChamp = Object.values(lol);
-  console.log(valuesChamp);
-  let champions = valuesChamp.sort(numberCompareArmor);
-  let keys = [];
-  champions.forEach(element => { keys.push(element.id)});
-  console.log(keys);
-  console.log (champions);
-  return keys.reverse();
-}
+
 function numberCompareHp(a,b) {
   return a.stats.hp - b.stats.hp;
 }
@@ -48,4 +57,4 @@ function numberCompareMp(a,b) {
 }
 function numberCompareArmor(a,b) {
   return a.stats.armor - b.stats.armor;
-}
+}*/
