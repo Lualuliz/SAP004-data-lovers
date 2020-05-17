@@ -142,7 +142,8 @@ a {
 .image0,
 .image01,
 .image02,
-.image03
+.image03,
+.image04
  {
   position: relative;
   height: 100%;
@@ -199,6 +200,11 @@ a {
 
 .image03 {
   background-image: url(image/lol-background7.png);
+  height:200px;
+}
+
+.image04 {
+  background-image: url(image/lol-background4.jpg);
   height:200px;
 }
 
