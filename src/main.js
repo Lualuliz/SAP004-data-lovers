@@ -34,10 +34,10 @@ const filterByNameInput = document.getElementById("filter-by-name");
 
 const renderSearchByName = () => {
   const search = filterByNameInput.value;
-
   const result = filterBy(lol, search);
   lolList.innerHTML = "";
   renderChampions(result);
+  
  
 };
 
@@ -50,12 +50,14 @@ const renderOrderBy = () => {
   const [order, param] = searchValue.split("-");
   const isAscending = order === "ascending";
   const result = orderBy(lol, param, isAscending);
-  renderChampions(result);
+ 
   lolList.innerHTML = "";
-  console.log(renderOrderBy);
+  renderChampions(result);
+  
 };
 
 sortInput.addEventListener("change", renderOrderBy);
+filterByNameInput.addEventListener("keyup", renderSearchByName);
 
 
 

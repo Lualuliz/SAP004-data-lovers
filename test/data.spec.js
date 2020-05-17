@@ -1,23 +1,27 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterBy} from '../src/data.js';
+import { orderBy} from '../src/data.js';
+import {data} from '../src/data.js';
 
 
-describe('example', () => {
+describe('filterBy', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterBy).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('Deveria retornar champions coma letra A', () => {
+    expect(data.filterBy()).toBe( 'a a z');
+    
+    
   });
 });
 
 
-describe('anotherExample', () => {
+
+describe('orderBy', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof  orderBy).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `champion com maior armor', () => {
+    expect(data.orderBy.sort()).toMacth(31.384);
   });
 });
