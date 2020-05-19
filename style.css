@@ -223,7 +223,12 @@ a {
   }
 
   .logo{
-    display:none;
+    position: absolute;
+    bottom: 90%;
+    width:100px;
+    height: 80px;
+    z-index: -1;
+
   }
 
   h1 {
@@ -231,18 +236,16 @@ a {
   }
   .card {
     display: inline-block;
-    clear: both;
     font-family: "Friz Quadrata Std", sans-serif;
     color: white;
-    width: 150px;
-    height: 250px;
-    margin: 10px;
-    padding: 2px;
-    border-radius: 10%;
+    width: 120px;
+    height: 230px;
+    margin: 5px;
+    padding: 1px;
+    border-radius: 8%;
     text-align: center;
-    position: relative;
-    left: 5%;
-    bottom: 50%;
+   font-size:0.8em ;
+   
     background-image: radial-gradient(
       circle,
       #9055a2,
@@ -262,15 +265,22 @@ a {
     z-index: -1;
   }
 
+  .link {
+    background-color: #ce6d39;
+    position: relative;
+    font-size: 11px;
+    padding: 10px 16px;
+    text-shadow: -2px 2px 3px #ce6d39;
+  }
+
 
   .nav-form {
     display: inline-block;
     position: absolute;
-    left: 47%;
-    bottom: 40%;
+    right: 59%;
+    bottom: 33%;
     padding: 19px;
-   
-    line-height: 1.5;
+    width: 100px;
     color: white;
     margin: 5px;
     outline: none;
@@ -289,7 +299,7 @@ a {
  {
   position: relative;
   height: 100%;
-  width: 400px;
+  width: 355px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -297,7 +307,7 @@ a {
   font-family: "Friz Quadrata Std", sans-serif;
   font-weight: bolder;
   color: white;
-  font-size: 1.2em;
+  font-size: 0.9em;
   text-shadow: 2px 2px black;
   text-align: center;
   line-height: 1.5;
@@ -308,6 +318,11 @@ a {
 .image02 {
   background-image: url(image/lol-background12.jpg);
   height:200px;
+}
+
+.image-size{
+  width: 100px;
+  height: 100px;
 }
 
 
