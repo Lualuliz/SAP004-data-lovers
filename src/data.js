@@ -1,15 +1,14 @@
 import data from "./data/lol/lol.js";
 const lol = data.data;
-console.log(lol)
+console.log(lol);
 
 export const filterBy = (lolObject, searchdTerm) => {
   const lolArray = Object.values(lolObject);
+
   return lolArray.filter((champion) => {
     return champion.name.toUpperCase().indexOf(searchdTerm.toUpperCase()) === 0;
-  }); 
-  
+  });
 };
-
 
 export const orderBy = (lolObject, param, ascending) => {
   const lolArray = Object.values(lolObject);
@@ -20,7 +19,6 @@ export const orderBy = (lolObject, param, ascending) => {
     if (param === "armor") {
       a = championA.stats.armor;
       b = championB.stats.armor;
-      console.log(b)
     } else if (param === "hp") {
       a = championA.stats.hp;
       b = championB.stats.hp;
@@ -32,12 +30,22 @@ export const orderBy = (lolObject, param, ascending) => {
       b = championB.lol.name;
     }
 
-    const ascendingOrder = a < b ? 1 : b < a ? -1 : 0;
+    const ascendingOrder = a < b ? 1 : -1;
     const descendingOrder = ascendingOrder * -1;
-  
 
     return ascending ? ascendingOrder : descendingOrder;
   });
 };
+
+export const calculated = (championA, championB) => {
+  let lowestMp = championA.stats.armor;
+
+  let HigherMp = championB.stats.armor;
+
+  let porcentage = ((lowestMp - HigherMp) * 100) / lowestMp;
+};
+console.log(calculated);
+
+
 
   

@@ -7,7 +7,7 @@ const lol = data.data;
 const lolList = document.getElementById("lol-list");
 
 const renderLol = (lol) => {
-  const template = document.getElementById("lol-template"); //pegando a referencia no DOM
+  const template = document.getElementById("lol-template");
   const card = template.content.querySelector(".card");
   const championsName = card.querySelector(".name");
   const championsImage = card.querySelector(".img");
@@ -15,7 +15,7 @@ const renderLol = (lol) => {
   const championsMP = card.querySelector(".MP");
   const championsHP = card.querySelector(".HP");
 
-  championsName.textContent = lol.name; //populando informacoes
+  championsName.textContent = lol.name;
   championsArmor.textContent = "Armor:" + lol.stats.armor;
   championsMP.textContent = "MP:" + lol.stats.mp;
   championsHP.textContent = "HP:" + lol.stats.hp;
@@ -37,11 +37,7 @@ const renderSearchByName = () => {
   const result = filterBy(lol, search);
   lolList.innerHTML = "";
   renderChampions(result);
-  
- 
 };
-
-filterByNameInput.addEventListener("keyup", renderSearchByName);
 
 const sortInput = document.getElementById("sort");
 
@@ -50,10 +46,9 @@ const renderOrderBy = () => {
   const [order, param] = searchValue.split("-");
   const isAscending = order === "ascending";
   const result = orderBy(lol, param, isAscending);
- 
+
   lolList.innerHTML = "";
   renderChampions(result);
-  
 };
 
 sortInput.addEventListener("change", renderOrderBy);
