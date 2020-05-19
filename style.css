@@ -235,8 +235,8 @@ a {
     clear: both;
     font-family: "Friz Quadrata Std", sans-serif;
     color: white;
-    width: 200px;
-    height: 280px;
+    width: 150px;
+    height: 250px;
     margin: 10px;
     padding: 2px;
     border-radius: 10%;
@@ -263,5 +263,18 @@ a {
     z-index: -1;
   }
 
+
+  .nav-form {
+    display: inline-block;
+    position: absolute;
+    left: 47%;
+    bottom: 40%;
+    padding: 19px;
+   
+    line-height: 1.5;
+    color: white;
+    margin: 5px;
+    outline: none;
+  }
   
 }
