@@ -10,16 +10,8 @@ p {
   font-family: "Friz Quadrata Std", sans-serif;
 }
 
-input {
-  color: #fff;
-}
-
 
 /****** Menus*********************************************************/
-
-.logo2{
-  display:none;
-}
 
 .nav {
   position: relative;
@@ -109,7 +101,6 @@ a {
   font-family: "Friz Quadrata Std", sans-serif;
   color: white;
   width: 170px;
-  min-width: 100px;
   height: 250px;
   margin: 10px;
   padding: 2px;
@@ -220,7 +211,7 @@ a {
 /************* Responsividade ************/
 
 
-@media (max-width: 600px) {
+@media  (max-width: 600px) {
   body {
     opacity: 90%;
     height: 100%;
@@ -232,6 +223,10 @@ a {
     font-family: "Friz Quadrata Std", sans-serif;
   }
 
+  .logo{
+    display:none;
+  }
+
   h1 {
     text-align: center;
   }
@@ -240,7 +235,6 @@ a {
     clear: both;
     font-family: "Friz Quadrata Std", sans-serif;
     color: white;
-    width: 100%;
     width: 200px;
     height: 280px;
     margin: 10px;
@@ -249,27 +243,25 @@ a {
     text-align: center;
     position: relative;
     left: 5%;
-    bottom: 40%;
+    bottom: 50%;
+    background-image: radial-gradient(
+      circle,
+      #9055a2,
+      #7b4d93,
+      #674684,
+      #543d74,
+      #433564,
+      #382f5b,
+      #2e2a52,
+      #242449,
+      #1c2045,
+      #141d41,
+      #0b193c,
+      #011638
+    );
     border: 2px solid black;
     z-index: -1;
   }
-  .logo{
-    display: none;
-  }
 
-
-  .logo2 {
-    background-image: url("image/lol-logo2.png");
-    position: absolute;
-    left:10%;
-    right: 30%;
-    top: 1%;
-    z-index: -1;
-  }
-
- 
-  .link {
-    background-color: #ce6d39;
-   
-  }
+  
 }
