@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Data LoLvers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="logo2" ><img class="logo" src="image/logo.png" /></header>
+    <nav class="nav-sobre">
+      <div class="link"><a href="index.html">Home</a></div>
+      <div class="link"><a href="sobre.html">Sobre LOL</a></div>
+    </nav>
+    <section class="nav-form">
+      <form method="post">
+        <fieldset style="border: none;">
+          <input
+            type="text"
+            placeholder="filtrat por nome"
+            id="filter-by-name"
+            class="order filtro-nome"
+          />
+        </fieldset>
+
+        <fieldset style="border: none;">
+          <select class="order" name="Ordenar por:" id="sort">
+            <option disabled selected value=""> ordenar por:</option>
+            <option class="order" value="ascending-name">A-Z</option>
+            <option class="order" value="descending-name">Z-A</option>
+            <option class="order" value="ascending-hp">Maior HP</option>
+            <option class="order" value="descending-hp">Menor HP</option>
+            <option class="order" value="ascending-mp">Maior MP</option>
+            <option class="order" value="descending-mp">Menor MP</option>
+            <option class="order" value="ascending-armor">Maior Armor</option>
+            <option class="order" value="descending-armor">Menor Armor</option>
+          </select>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <div id="lol-list"></div>
+      <template id="lol-template">
+        <div class="card">
+          <h2 class="name">Name</h2>
+          <img class="img" />
+          <h3 class="armor">Armor</h3>
+          <h3 class="MP">MP</h3>
+          <h3 class="HP">HP</h3>
+        </div>
+      </template>
+    </section>
+
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
