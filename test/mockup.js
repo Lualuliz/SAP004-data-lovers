@@ -1,4 +1,5 @@
 export const lol = {
+<<<<<<< HEAD
     type: "champion",
     format: "standAloneComplex",
     version: "6.24.1",
@@ -152,3 +153,158 @@ export const lol = {
       }
     }
   };
+=======
+  type: "champion",
+  format: "standAloneComplex",
+  version: "6.24.1",
+  data: {
+    Aatrox: {
+      version: "6.24.1",
+      id: "Aatrox",
+      key: "266",
+      name: "Aatrox",
+      title: "the Darkin Blade",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+      blurb: "Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's ...",
+      info: {
+        attack: 8,
+        defense: 4,
+        magic: 3,
+        difficulty: 4
+      },
+      image: {
+        full: "Aatrox.png",
+        sprite: "champion0.png",
+        group: "champion",
+        x: 0,
+        y: 0,
+        w: 48,
+        h: 48
+      },
+      tags: ["Fighter", "Tank"],
+      partype: "BloodWell",
+      stats: {
+        hp: 537.8,
+        hpperlevel: 85,
+        mp: 105.6,
+        mpperlevel: 45,
+        movespeed: 345,
+        armor: 24.384,
+        armorperlevel: 3.8,
+        spellblock: 32.1,
+        spellblockperlevel: 1.25,
+        attackrange: 150,
+        hpregen: 6.59,
+        hpregenperlevel: 0.5,
+        mpregen: 0,
+        mpregenperlevel: 0,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 60.376,
+        attackdamageperlevel: 3.2,
+        attackspeedoffset: -0.04,
+        attackspeedperlevel: 3
+      }
+    },
+    Jinx: {
+      version: "6.24.1",
+      id: "Jinx",
+      key: "222",
+      name: "Jinx",
+      title: "the Loose Cannon",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Jinx.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
+      blurb: "Jinx lives to wreak havoc without a thought for the consequences, leaving a trail of mayhem and panic in her wake. A manic and impulsive criminal, she despises nothing more than boredom, and gleefully brings her own volatile brand of pandemonium to ...",
+      info: {
+        attack: 9,
+        defense: 2,
+        magic: 4,
+        difficulty: 6
+      },
+      image: {
+        full: "Jinx.png",
+        sprite: "champion1.png",
+        group: "champion",
+        x: 192,
+        y: 48,
+        w: 48,
+        h: 48
+      },
+      tags: ["Marksman"],
+      partype: "MP",
+      stats: {
+        hp: 517.76,
+        hpperlevel: 82,
+        mp: 245.6,
+        mpperlevel: 45,
+        movespeed: 325,
+        armor: 22.88,
+        armorperlevel: 3.5,
+        spellblock: 30,
+        spellblockperlevel: 0,
+        attackrange: 525,
+        hpregen: 5.84,
+        hpregenperlevel: 0.5,
+        mpregen: 6.68,
+        mpregenperlevel: 1,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 58.46,
+        attackdamageperlevel: 2.41,
+        attackspeedoffset: 0,
+        attackspeedperlevel: 1
+      }
+    },
+    Zyra: {
+      version: "6.24.1",
+      id: "Zyra",
+      key: "143",
+      name: "Zyra",
+      title: "Rise of the Thorns",
+      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Zyra.png",
+      splash: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
+      blurb: "Longing to take control of her fate, the ancient, dying plant Zyra transferred her consciousness into a human body for a second chance at life. Centuries ago, she and her kind dominated the Kumungu Jungle, using thorns and vines to consume any animal ...",
+      info: {
+        attack: 4,
+        defense: 3,
+        magic: 8,
+        difficulty: 7
+      },
+      image: {
+        full: "Zyra.png",
+        sprite: "champion4.png",
+        group: "champion",
+        x: 0,
+        y: 48,
+        w: 48,
+        h: 48
+      },
+      tags: ["Mage", "Support"],
+      partype: "MP",
+      stats: {
+        hp: 499.32,
+        hpperlevel: 74,
+        mp: 334,
+        mpperlevel: 50,
+        movespeed: 340,
+        armor: 20.04,
+        armorperlevel: 3,
+        spellblock: 30,
+        spellblockperlevel: 0,
+        attackrange: 575,
+        hpregen: 5.69,
+        hpregenperlevel: 0.5,
+        mpregen: 8.5,
+        mpregenperlevel: 0.8,
+        crit: 0,
+        critperlevel: 0,
+        attackdamage: 53.376,
+        attackdamageperlevel: 3.2,
+        attackspeedoffset: 0,
+        attackspeedperlevel: 2.11
+      }
+    }
+  }
+};
+>>>>>>> paralela

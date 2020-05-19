@@ -53,3 +53,14 @@ const renderOrderBy = () => {
 
 sortInput.addEventListener("change", renderOrderBy);
 filterByNameInput.addEventListener("keyup", renderSearchByName);
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+  
+>>>>>>> paralela
