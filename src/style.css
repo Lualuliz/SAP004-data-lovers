@@ -1,9 +1,9 @@
 body {
   background-image: url("image/lol-background3.jpg");
+  background-size: cover;
   opacity: 90%;
   background-repeat: repeat-y;
-  background-attachment: scroll;
-  background-blend-mode: soft-light;
+  height: 100%;
 }
 
 p {
@@ -11,10 +11,6 @@ p {
 }
 
 /****** Menus*********************************************************/
-
-.logo2{
-  display:none;
-}
 
 .nav {
   position: relative;
@@ -30,7 +26,6 @@ p {
   position: absolute;
   bottom: 60%;
   left: 35%;
-  z-index: -1;
 }
 
 a:hover,
@@ -104,7 +99,6 @@ a {
   font-family: "Friz Quadrata Std", sans-serif;
   color: white;
   width: 170px;
-  min-width: 100px;
   height: 250px;
   margin: 10px;
   padding: 2px;
@@ -136,7 +130,13 @@ a {
 .image1,
 .image2,
 .image3,
-.image4 {
+.image4,
+.image0,
+.image0,
+.image01,
+.image02,
+.image03,
+.image04 {
   position: relative;
   height: 100%;
   background-repeat: no-repeat;
@@ -151,7 +151,6 @@ a {
   text-align: center;
   line-height: 1.5;
   z-index: -1;
-  opacity: 0.9;
 }
 
 .teste {
@@ -160,31 +159,43 @@ a {
 }
 
 .image1 {
-  background-image: url(image/lol-background.jpg);
-  height: 500px;
+  background-image: url(image/lol-background12.jpg);
+  height: 2000px;
 }
 
 .image2 {
+  background-image: url(image/lol-background12.jpg);
+  height: 600px;
+}
+
+.image0 {
   background-image: url(image/lol-background5.jpg);
-  height: 500px;
+  height: 200px;
+}
+.image01 {
+  background-image: url(image/lol-background1.png);
+  height: 200px;
 }
 
-.image3 {
+.image02 {
+  background-image: url(image/lol-background12.jpg);
+  height: 200px;
+}
+
+.image03 {
+  background-image: url(image/lol-background7.png);
+  height: 200px;
+}
+
+.image04 {
   background-image: url(image/lol-background4.jpg);
-  height: 500px;
-}
-
-.image4 {
-  background-image: url(image/lol-background6.png);
-  height: 500px;
+  height: 200px;
 }
 
 /************* Responsividade ************/
 
-
 @media (max-width: 600px) {
   body {
-    opacity: 90%;
     height: 100%;
     background-repeat: repeat-y;
     background-attachment: scroll;
@@ -194,24 +205,29 @@ a {
     font-family: "Friz Quadrata Std", sans-serif;
   }
 
+  .logo {
+    position: absolute;
+    bottom: 90%;
+    width: 100px;
+    height: 80px;
+    z-index: -1;
+  }
+
   h1 {
     text-align: center;
   }
   .card {
     display: inline-block;
-    clear: both;
     font-family: "Friz Quadrata Std", sans-serif;
     color: white;
-    width: 100%;
-    width: 200px;
-    height: 280px;
-    margin: 10px;
-    padding: 2px;
-    border-radius: 10%;
+    width: 120px;
+    height: 230px;
+    margin: 5px;
+    padding: 1px;
+    border-radius: 8%;
     text-align: center;
-    position: relative;
-    left: 5%;
-    bottom: 50%;
+    font-size: 0.8em;
+
     background-image: radial-gradient(
       circle,
       #9055a2,
@@ -231,31 +247,60 @@ a {
     z-index: -1;
   }
 
-  .logo {
-    display: none;
+  .link {
+    background-color: #ce6d39;
+    position: relative;
+    font-size: 11px;
+    padding: 10px 16px;
+    text-shadow: -2px 2px 3px #ce6d39;
   }
 
-  .link {
-    background-color: #ce6d39;
-    border-radius: 41px;
-    display: inline-block;
-    width: 20%;
-    list-style-type: none;
-    font-size: 17px;
-    padding: 20px;
-    justify-content: center;
-  }
-  .link {
-    background-color: #ce6d39;
-    border-radius: 41px;
+  .nav-form {
     display: inline-block;
     position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 20%;
-    list-style-type: none;
-    font-size: 17px;
-    padding: 20px;
-    justify-content: center;
+    right: 59%;
+    bottom: 33%;
+    padding: 19px;
+    width: 100px;
+    color: white;
+    margin: 5px;
+    outline: none;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image0,
+  .image0,
+  .image01,
+  .image02,
+  .image03,
+  .image04 {
+    position: relative;
+    height: 100%;
+    width: 355px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Friz Quadrata Std", sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    line-height: 1.5;
+    z-index: -1;
+  }
+
+  .image02 {
+    background-image: url(image/lol-background12.jpg);
+    height: 200px;
+  }
+
+  .resp-image {
+    width: 200px;
+    height: 150px;
   }
 }
