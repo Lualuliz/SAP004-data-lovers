@@ -2,14 +2,13 @@ body {
   background-image: url("image/lol-background3.jpg");
   background-size: cover;
   opacity: 90%;
-  background-repeat:repeat-y;
+  background-repeat: repeat-y;
   height: 100%;
 }
 
 p {
   font-family: "Friz Quadrata Std", sans-serif;
 }
-
 
 /****** Menus*********************************************************/
 
@@ -27,7 +26,6 @@ p {
   position: absolute;
   bottom: 60%;
   left: 35%;
-  
 }
 
 a:hover,
@@ -132,14 +130,13 @@ a {
 .image1,
 .image2,
 .image3,
-.image4, 
+.image4,
 .image0,
 .image0,
 .image01,
 .image02,
 .image03,
-.image04
- {
+.image04 {
   position: relative;
   height: 100%;
   background-repeat: no-repeat;
@@ -154,10 +151,7 @@ a {
   text-align: center;
   line-height: 1.5;
   z-index: -1;
-  
 }
-
-
 
 .teste {
   position: absolute;
@@ -167,51 +161,40 @@ a {
 .image1 {
   background-image: url(image/lol-background12.jpg);
   height: 2000px;
-  
-  
 }
 
 .image2 {
   background-image: url(image/lol-background12.jpg);
   height: 600px;
-  
 }
 
 .image0 {
   background-image: url(image/lol-background5.jpg);
-  height:200px;
-
+  height: 200px;
 }
 .image01 {
   background-image: url(image/lol-background1.png);
-  height:200px;
-
+  height: 200px;
 }
 
 .image02 {
   background-image: url(image/lol-background12.jpg);
-  height:200px;
+  height: 200px;
 }
 
 .image03 {
   background-image: url(image/lol-background7.png);
-  height:200px;
+  height: 200px;
 }
 
 .image04 {
   background-image: url(image/lol-background4.jpg);
-  height:200px;
+  height: 200px;
 }
-
-
-
-
-
 
 /************* Responsividade ************/
 
-
-@media  (max-width: 600px) {
+@media (max-width: 600px) {
   body {
     height: 100%;
     background-repeat: repeat-y;
@@ -222,13 +205,12 @@ a {
     font-family: "Friz Quadrata Std", sans-serif;
   }
 
-  .logo{
+  .logo {
     position: absolute;
     bottom: 90%;
-    width:100px;
+    width: 100px;
     height: 80px;
     z-index: -1;
-
   }
 
   h1 {
@@ -244,8 +226,8 @@ a {
     padding: 1px;
     border-radius: 8%;
     text-align: center;
-   font-size:0.8em ;
-   
+    font-size: 0.8em;
+
     background-image: radial-gradient(
       circle,
       #9055a2,
@@ -273,7 +255,6 @@ a {
     text-shadow: -2px 2px 3px #ce6d39;
   }
 
-
   .nav-form {
     display: inline-block;
     position: absolute;
@@ -287,50 +268,44 @@ a {
   }
 
   .image1,
-.image2,
-.image3,
-.image4, 
-.image0,
-.image0,
-.image01,
-.image02,
-.image03,
-.image04
- {
-  position: relative;
-  height: 100%;
-  width: 355px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: "Friz Quadrata Std", sans-serif;
-  font-weight: bolder;
-  color: white;
-  font-size: 0.9em;
-  text-shadow: 2px 2px black;
-  text-align: center;
-  line-height: 1.5;
-  z-index: -1;
-  
-}
+  .image2,
+  .image3,
+  .image4,
+  .image0,
+  .image0,
+  .image01,
+  .image02,
+  .image03,
+  .image04 {
+    position: relative;
+    height: 100%;
+    width: 355px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Friz Quadrata Std", sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    line-height: 1.5;
+    z-index: -1;
+  }
 
-.image02 {
-  background-image: url(image/lol-background12.jpg);
-  height:200px;
-}
+  .image02 {
+    background-image: url(image/lol-background12.jpg);
+    height: 200px;
+  }
 
-.image-size{
-  width: 100px;
-  height: 100px;
-}
+  .image-size {
+    width: 100px;
+    height: 100px;
+  }
 
-
-
-
-.resp-image{
-  width: 200px;
-  height: 150px;
-}
-  
+  .resp-image {
+    width: 200px;
+    height: 150px;
+  }
 }
