@@ -4,7 +4,6 @@ console.log(lol);
 
 export const filterBy = (lolObject, searchdTerm) => {
   const lolArray = Object.values(lolObject);
-<<<<<<< HEAD
 
   return lolArray.filter((champion) => {
     return champion.name.toUpperCase().indexOf(searchdTerm.toUpperCase()) === 0;
@@ -37,7 +36,7 @@ export const orderBy = (lolObject, param, ascending) => {
     return ascending ? ascendingOrder : descendingOrder;
   });
 };
-=======
+
 
   return lolArray.filter((champion) => {
     return champion.name.toUpperCase().indexOf(searchdTerm.toUpperCase()) === 0;
@@ -70,4 +69,4 @@ export const orderBy = (lolObject, param, ascending) => {
     return ascending ? ascendingOrder : descendingOrder;
   });
 };
->>>>>>> paralela
+
