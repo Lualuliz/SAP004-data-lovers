@@ -54,6 +54,7 @@ Com a realização de pesquisa de usuários, relatamos que esteticamente o menu 
 Após as pesquisas de usuário, pesquisa sobre league of legends, o layout estabelecido foi em uma pagina inicial, a demonstração dos champions em cards, com as informações de nome, armor,hp e mp, podendo ser filtrados em ordem de a-z e z-a, e filtradoes em maior e menor atributos, na segunda pagina, temos informações de classes, jogabilidade, história e etc em um modelo responsivo.
 
 [Data LoLvers](https://lualuliz.github.io/SAP004-data-lovers/ ) <--------------- Clique e confira.
+![lol](https://user-images.githubusercontent.com/57915141/91754962-b9a34080-eba0-11ea-912a-138acf92debb.png)
 
 ## Checklist
 
