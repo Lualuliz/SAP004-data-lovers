@@ -1,5 +1,7 @@
 # Data LoLvers
 
+[Data LoLvers](https://lualuliz.github.io/SAP004-data-lovers/ ) <--------------- Clique e confira.
+![lol](https://user-images.githubusercontent.com/57915141/91754962-b9a34080-eba0-11ea-912a-138acf92debb.png)
 
 
 ## Índice
@@ -31,11 +33,11 @@
 Em nossas pesquisas de usuário, relatamos que os usuários teriam a necessidade como jogadores inexperientes de,  entender melhor os champions, suas classes e jogabilidade, mapas e torneios, porém muitos textos e imagens podem ser prejudiciais em uma primeira visita, então resumimos em pequenos textos priorizando a qualidade de informação passada para estes usuarios. Para jogadores com mais experiencia, a necessidade de filtrar atributos dos champions para um melhor entendimento de como eles se encaixam em seu time.
 
 ## Protótipo de baixa fidelidade 
- - ![site-rabi](https://user-images.githubusercontent.com/57915141/82377485-19af1600-99fa-11ea-8fc9-794ed5e6e00a.jpg)
- - ![site-rabi2](https://user-images.githubusercontent.com/57915141/82377337-e5d3f080-99f9-11ea-9d43-636452f1980d.jpg)
- - ![site-rab3](https://user-images.githubusercontent.com/57915141/82377820-a2c64d00-99fa-11ea-856e-b9d0a88ee85b.png)
- - 
-- ![site-rab4](https://user-images.githubusercontent.com/57915141/82377910-bf628500-99fa-11ea-996a-721df768e7a7.png)
+  ![site-rabi](https://user-images.githubusercontent.com/57915141/82377485-19af1600-99fa-11ea-8fc9-794ed5e6e00a.jpg)
+   ![site-rabi2](https://user-images.githubusercontent.com/57915141/82377337-e5d3f080-99f9-11ea-9d43-636452f1980d.jpg)
+   ![site-rab3](https://user-images.githubusercontent.com/57915141/82377820-a2c64d00-99fa-11ea-856e-b9d0a88ee85b.png)
+ 
+![site-rab4](https://user-images.githubusercontent.com/57915141/82377910-bf628500-99fa-11ea-996a-721df768e7a7.png)
 
 Com a realização de pesquisa de usuários, relatamos que esteticamente o menu <aside> não fica bem em telas de celulares por exemplo, então modificamos para um layout mais unificado onde os menus ficam em <header> para uma melhor experiência de usuario.
 
@@ -53,8 +55,7 @@ Com a realização de pesquisa de usuários, relatamos que esteticamente o menu 
 
 Após as pesquisas de usuário, pesquisa sobre league of legends, o layout estabelecido foi em uma pagina inicial, a demonstração dos champions em cards, com as informações de nome, armor,hp e mp, podendo ser filtrados em ordem de a-z e z-a, e filtradoes em maior e menor atributos, na segunda pagina, temos informações de classes, jogabilidade, história e etc em um modelo responsivo.
 
-[Data LoLvers](https://lualuliz.github.io/SAP004-data-lovers/ ) <--------------- Clique e confira.
-![lol](https://user-images.githubusercontent.com/57915141/91754962-b9a34080-eba0-11ea-912a-138acf92debb.png)
+
 
 ## Checklist
 
