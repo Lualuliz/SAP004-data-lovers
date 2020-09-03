@@ -1,7 +1,7 @@
 # Data LoLvers
 
 [Data LoLvers](https://lualuliz.github.io/SAP004-data-lovers/ ) <--------------- Clique e confira.
-![lol](https://user-images.githubusercontent.com/57915141/91754962-b9a34080-eba0-11ea-912a-138acf92debb.png)
+![league](https://user-images.githubusercontent.com/57915141/92160871-13587480-ee06-11ea-88de-8146db65ab05.png)
 
 
 ## Índice
