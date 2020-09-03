@@ -37,15 +37,7 @@ export const orderBy = (lolObject, param, ascending) => {
   });
 };
 
-export const calculated = (championA, championB) => {
-  let lowestMp = championA.stats.armor;
-
-  let HigherMp = championB.stats.armor;
-
-  let porcentage = ((lowestMp - HigherMp) * 100) / lowestMp;
-};
-console.log(calculated);
 
 
 
-  
+
