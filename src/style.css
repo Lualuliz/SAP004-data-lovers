@@ -1,9 +1,16 @@
-body {
-  background-image: url("image/lol-background3.jpg");
-  background-size: cover;
-  opacity: 90%;
-  background-repeat: repeat-y;
-  height: 100%;
+body{
+  background-color: #030711;
+}
+
+.background{
+  position: fixed;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 p {
@@ -25,18 +32,20 @@ p {
 .logo {
   position: absolute;
   bottom: 60%;
-  left: 35%;
+  left: 28%;
 }
 
-a:hover,
-a {
-  color: white;
-  text-decoration: none;
-  outline: none;
+.logo1{
+  position: absolute;
+  bottom: 50%;
+  left: 31%;
+  
 }
+
 
 .link {
   background-color: #ce6d39;
+  border: solid 2px #000000;
   border-radius: 41px;
   display: inline-block;
   cursor: pointer;
@@ -48,6 +57,13 @@ a {
   background: linear-gradient(to bottom, #000000 5%, #c65146 100%);
 }
 
+a:hover,
+a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
 .order {
   box-shadow: inset 0px -3px 7px 0px #f17f42;
   background-color: #ce6d39;
@@ -55,6 +71,7 @@ a {
   color: #ffffff;
   outline: none;
   border: 2px solid #0b0e07;
+  height: 25px;
 }
 /*****************************Texto Sobre********************************/
 
@@ -99,13 +116,13 @@ a {
   font-family: "Friz Quadrata Std", sans-serif;
   color: white;
   width: 170px;
-  height: 250px;
+  height: 230px;
   margin: 10px;
   padding: 2px;
   border-radius: 10%;
   text-align: center;
   position: relative;
-  left: 5%;
+  left: 1%;
   bottom: 50%;
   background-image: radial-gradient(
     circle,
@@ -153,14 +170,26 @@ a {
   z-index: -1;
 }
 
-.teste {
-  position: absolute;
-  top: 40%;
+.image02top{
+  background-image: url(image/lol-background12.jpg);
+  height: 200px;
+  width: 100%;
+  padding: 0;
+  margin-left:0;
+
 }
+.imageS01{
+width: 500px;
+height: 200px;
+}
+
 
 .image1 {
   background-image: url(image/lol-background12.jpg);
   height: 2000px;
+  width: 100%;
+  padding: 0;
+  margin-left:0;
 }
 
 .image2 {
@@ -170,48 +199,46 @@ a {
 
 .image0 {
   background-image: url(image/lol-background5.jpg);
-  height: 200px;
+  height: 220px;
 }
 .image01 {
   background-image: url(image/lol-background1.png);
-  height: 200px;
+  height: 220px;
 }
 
 .image02 {
   background-image: url(image/lol-background12.jpg);
-  height: 200px;
+  height: 220px;
 }
 
 .image03 {
   background-image: url(image/lol-background7.png);
-  height: 200px;
+  height: 220px;
 }
 
 .image04 {
   background-image: url(image/lol-background4.jpg);
-  height: 200px;
+  height: 220px;
 }
 
 /************* Responsividade ************/
 
-@media (max-width: 600px) {
-  body {
-    height: 100%;
-    background-repeat: repeat-y;
-    background-attachment: scroll;
-    background-blend-mode: soft-light;
-  }
+@media (max-width: 800px) {
+
   p {
     font-family: "Friz Quadrata Std", sans-serif;
   }
-
+  .logo1,
   .logo {
+    display: none;
     position: absolute;
     bottom: 90%;
     width: 100px;
     height: 80px;
     z-index: -1;
   }
+
+  
 
   h1 {
     text-align: center;
@@ -252,7 +279,11 @@ a {
     position: relative;
     font-size: 11px;
     padding: 10px 16px;
+    height: 20px;
+    width: 65px;
+    margin-top: 5%;
     text-shadow: -2px 2px 3px #ce6d39;
+    text-align: center;
   }
 
   .nav-form {
